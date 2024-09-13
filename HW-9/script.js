@@ -55,14 +55,14 @@ console.log('Task 6');
 
 const numbers = [];
 
-while(true){
-    let input = Number(prompt("Enter your number: "));
-
-    if(input == null){
-        break;
+while (true) {
+    let input = prompt("Введіть число: ");
+    
+    if (input != null) {
+        numbers.push(Number(input));
     } 
-    else{
-        numbers.push(input);
+    else {
+        break;
     }
 }
 
